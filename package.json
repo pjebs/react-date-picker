@@ -1,5 +1,5 @@
 {
-  "name": "react-date-picker",
+  "name": "pjebs-react-date-picker",
   "version": "1.0.0",
   "description": "Awesome React Datepicker. You can use it on non-React websites (without npm)",
   "main": "react-datepicker.js",
