@@ -1,0 +1,100 @@
+/* DayPicker styles */
+.DayPicker {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: inline-block;
+  margin: 0px 0px;
+  user-select: none;
+  vertical-align: top;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Avenir Next", "sans-serif";
+  transform: scale(1, 1);
+  color: #394263;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+}
+
+/* Caption & navigation buttons */
+.DayPicker-caption {
+  line-height: 36px;
+  color: #394263;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.DayPicker-weekday {
+  width: 36px;
+  line-height: 36px;
+  font-size: 0.875em;
+  color: #82888a;
+  font-weight: normal;
+  text-align: center;
+}
+
+.DayPicker-nav {
+  display: block;
+  border: 0;
+  background-color: transparent;
+  position: relative;
+  height: 36px;
+  width: 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+  cursor: pointer;
+}
+
+.DayPicker-nav--right {
+  background-image: url("assets/right.svg");
+}
+
+.DayPicker-nav--left {
+  background-image: url("assets/left.svg");
+}
+
+/* Days */
+.DayPicker-day {
+  width: 36px;
+  line-height: 36px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.DayPicker-day:hover:not(.DayPicker-day--outside):not(.DayPicker-day--disabled):not(.DayPicker-day--selected):not(.DayPicker-day--today) {
+  background-color: #EEE;
+  color: #394263;
+  border-radius: 3px;
+}
+
+/* Modifiers */
+.DayPicker-day--outside {
+  color: #dce0e0 !important;
+  cursor: default;
+}
+
+.DayPicker-day--disabled {
+  cursor: default;
+  color: #dce0e0;
+  background-color: #F1F1F1;
+}
+
+.DayPicker-day--today {
+  color: #1BBAE1;
+}
+
+.DayPicker-day--today:hover {
+  color: #1BBAE1;
+  background-color: #EEE;
+  border-radius: 3px;
+}
+
+.DayPicker-day--selected:not(.DayPicker-day--outside) {
+  color: white;
+  background-color: #1BBAE1;
+  border-radius: 3px;
+}

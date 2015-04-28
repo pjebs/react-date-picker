@@ -1,0 +1,76 @@
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+	<script src="https://fb.me/react-0.13.1.js"></script>
+	<script src="https://fb.me/JSXTransformer-0.13.1.js"></script>
+	<script src="moment.js"></script>
+  <link rel="stylesheet" type="text/css" href="DatePicker.css">
+	<title>TEST DATE PICKER</title>
+  <style>
+body {
+  text-align: center;
+  
+}
+  </style>
+
+</head>
+<body>
+
+<div id="dp"></div>
+<p>
+<div id="date"></div>
+<p>
+<div>Please <strong>star</strong> my repository on Github: <a href="https://github.com/pjebs/react-datepicker">https://github.com/pjebs/react-datepicker</a></div>
+<p>
+<div> </div>
+<script src="react-datepicker.js"></script>
+<script src="Utils.js"></script>
+<script type="text/jsx">
+
+
+function isSameDay(a, b) {
+  return a.startOf('day').isSame(b.startOf('day'));
+}
+
+function dayclick(day, modifiers, event) {
+  document.getElementById("date").innerHTML = day.format("YYYY-MM-DD");
+
+  if (modifiers.indexOf("selected") > -1)
+    dd.setState({selected: null});
+  else
+    dd.setState({selected: day});
+
+}
+
+var MyDatePicker = React.createClass({
+  getInitialState: function() {
+    return {selected: null};
+  },
+
+  render: function() {
+  	var modifiers = {
+      today: function (day) {
+        // add the `today` modifier for the current day
+        return isSameDay(moment(), day);
+      },
+
+      selected: function (day) {
+        if (this.state.selected === null) return false;
+        return isSameDay(this.state.selected, day);
+      }.bind(this)
+    };
+    return (
+      <DayPicker ref="daypicker" modifiers={ modifiers } enableOutsideDays={true} onDayClick={dayclick}/>
+    );
+  }
+});
+
+var dd = React.render(<MyDatePicker/>, document.getElementById("dp"));
+
+
+
+
+</script>
+</body>
+</html>

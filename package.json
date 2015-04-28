@@ -1,0 +1,22 @@
+{
+  "name": "react-date-picker",
+  "version": "1.0.0",
+  "description": "Awesome React Datepicker. You can use it on non-React websites (without npm)",
+  "main": "react-datepicker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pjebs/react-date-picker.git"
+  },
+  "keywords": [
+    "react-component"
+  ],
+  "author": "PJ Engineering and Business Solutions Pty. Ltd. <enquiries@pjebs.com.au>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pjebs/react-date-picker/issues"
+  },
+  "homepage": "https://github.com/pjebs/react-date-picker"
+}
