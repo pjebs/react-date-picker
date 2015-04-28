@@ -1,6 +1,8 @@
 React DatePicker
 =================
 
+![Screen shot of Date Picker](https://raw.github.com/pjebs/react-date-picker/master/screenshot.png)
+
 Please read the [documentation](https://github.com/gpbl/react-day-picker) to use all the features of the Date Picker.
 
 There is an example project included to show you how to use this Date Picker component on existing non-React projects.
