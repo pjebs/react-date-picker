@@ -11,7 +11,14 @@
     "url": "https://github.com/pjebs/react-date-picker.git"
   },
   "keywords": [
-    "react-component"
+    "react-component",
+    "date",
+    "picker",
+    "day",
+    "date picker",
+    "day picker",
+    "date-picker",
+    "day-picker"
   ],
   "author": "PJ Engineering and Business Solutions Pty. Ltd. <enquiries@pjebs.com.au>",
   "license": "MIT",
